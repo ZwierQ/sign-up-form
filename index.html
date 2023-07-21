@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image-container">
+            <img class="background-image" src="./images/background-image.jpg" >
+            <div class="logo-container">
+                <img class="logo" src="./images/odin-lined.png" >
+                <p>ODIN</p>
+            </div>
+            <div class="photo-credits">
+                Photo by <a href="https://unsplash.com/@peter_mc_greats">Piedro De Grandi</a> on <a href="https://unsplash.com">Unsplash</a>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="phrases-container">
+                <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <form action="./" method="dialog">
+                <div class="shadowed-container">
+                    <h1>Let's do this!</h1>
+                    <div class="form-container">
+                        <div class="column">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" required>
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="column">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" required>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="789-456-123">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
