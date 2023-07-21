@@ -3,16 +3,11 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
-html {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     overflow: hidden;
     font-family: sans-serif;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     margin: 0;
     padding: 0;
 }
@@ -27,7 +22,7 @@ body {
 
 .background-image-container {
     position: relative;
-    height: 101vh;
+    height: 100%;
 }
 
 .background-image {
@@ -61,7 +56,7 @@ body {
 
 .photo-credits {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
@@ -111,6 +106,7 @@ h1 {
     display: flex;
     flex-direction: column;
     min-width: 30%;
+    padding-right: 30px;
 }
 
 label {
@@ -161,4 +157,48 @@ button {
 
 button:active {
     transform: scale(1.02);
+}
+
+@media(max-width:1255px) {
+    body {
+        overflow: auto;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+    
+    .background-image-container {
+        background-color: rgb(67, 110, 128);
+    }
+
+    .background-image,
+    .photo-credits {
+        display: none;
+    }
+
+    .logo {
+        height: 150px;
+        width: auto
+    }
+
+    .logo-container {
+        position: relative;
+        display: flex;
+        padding: 15px;
+        width: 100vw;
+        background-color: rgb(67, 110, 128);
+    }
+
+    .right-section {
+        paddin: 50px;
+    }
+
+    .phrases-container {
+        margin-top: 20px;
+    }
+
+    .column {
+        min-width: none;
+    }
 }
