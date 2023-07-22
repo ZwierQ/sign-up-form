@@ -8,7 +8,6 @@ const errorParagraphs = document.querySelectorAll(".error-message")
 function validatePasswords(password1, password2) {
     let errorMessage = "";
     let isValid = false
-    //  return (password1 === password2 && password1.length >= 8) ? true : false
     if (password1.length < 8) {
         isValid = false
         errorMessage = "Password is too short"
