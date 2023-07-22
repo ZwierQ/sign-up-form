@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css"/>
+    <script src="./index.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -33,7 +34,8 @@
                             <label for="email">EMAIL</label>
                             <input type="email" id="email" placeholder="your@email.com" required>
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" minlength="8" maxlength="20" required>
+                            <input type="password" id="password" class="password-input error" placeholder="at least 8 characters" minlength="8" maxlength="20" required>
+                            <p class="error-message">Password is too short</p>
                         </div>
                         <div class="column">
                             <label for="last-name">LAST NAME</label>
@@ -41,7 +43,8 @@
                             <label for="phone-number">PHONE NUMBER</label>
                             <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="789-456-123">
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" minlength="8" maxlength="20" required>
+                            <input type="password" id="confirm-password" class="password-input error" placeholder="at least 8 characters" minlength="8" maxlength="20" required>
+                            <p class="error-message">Password is too short</p>
                         </div>
                     </div>
                 </div>
