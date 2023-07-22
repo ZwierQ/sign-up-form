@@ -78,9 +78,13 @@ body {
 
 .phrases-container {
     margin-top: auto;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 150px 30px 50px;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+span {
+    font-style: italic;
 }
 
 h1 {
@@ -226,6 +230,7 @@ button:active {
 
     .phrases-container {
         margin-top: 20px;
+        padding: 25px;
     }
 
     .form-container {
